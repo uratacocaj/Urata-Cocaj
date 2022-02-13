@@ -1,0 +1,241 @@
+USHTRIMI 8
+
+*DETYRA 1
+
+import java.util.Scanner; 
+public class MuajtEVitit {
+
+    public static void main(String args[]) {
+        Scanner skaneriJem = new Scanner(System.in);
+        
+        System.out.println("Vendos Muajin");
+        
+        byte muaji = skaneriJem.nextByte();
+        
+        switch(muaji){
+            case 1: 
+            System.out.println("Muaji eshte Janar!");
+            break;
+            
+            case 2: 
+            System.out.println("Muaji eshte Shkurt!");
+            break;
+            
+            case 3: 
+            System.out.println("Muaji eshte Mars!");
+            break;
+            
+            case 4: 
+            System.out.println("Muaji eshte Prill!");
+            break;
+            
+            case 5: 
+            System.out.println("Muaji eshte Maj!");
+            break;
+            
+            case 6: 
+            System.out.println("Muaji eshte Qershor!");
+            break;
+            
+            case 7: 
+            System.out.println("Muaji eshte Korrik!");
+            break;
+            
+            case 8: 
+            System.out.println("Muaji eshte Gusht!");
+            break;
+            
+            case 9: 
+            System.out.println("Muaji eshte Shtator!");
+            break;
+            
+            case 10: 
+            System.out.println("Muaji eshte Tetor!");
+            break;
+            
+            case 11: 
+            System.out.println("Muaji eshte Nentor!");
+            break;
+            
+            case 12: 
+            System.out.println("Muaji eshte Dhjetor!");
+            break;
+            
+            default: 
+                System.out.println("Muaji eshte dhene gabim!");
+        }       
+   };
+}
+
+-----------------------------------------------------------------------
+*DETYRA 2
+
+import java.util.Scanner;
+
+public class DitetEJaves {
+    public static void main(String args[]) {
+        Scanner skaneriJem = new Scanner(System.in);
+        
+        System.out.println("Sheno emrin e dites se javes:");
+        
+        String ditaJaves = skaneriJem.nextLine();
+        
+        if(null == ditaJaves) {System.out.println("Dita e javes eshte shenuar gabim!");} else switch (ditaJaves) {
+            case "E Hene":
+                System.out.println("Dita e pare - Dite pune");
+                break;
+            case "E Marte":
+                System.out.println("Dita e dyte - Dite pune");
+                break;
+            case "E Merkure":
+                System.out.println("Dita e trete - Dite pune");
+                break;
+            case "E Enjte":
+                System.out.println("Dita e katert - Dite pune");
+                break;
+            case "E Premte":
+                System.out.println("Dita e peste - Dite pune");
+                break;
+            case "E Shtunde":
+                System.out.println("Dita e gjashte - Dite vikendi");
+                break;
+            case "E Diele":
+                System.out.println("Dita e shtate - Dite vikendi");
+                break;
+            default:
+                System.out.println("Dita e javes eshte shenuar gabim!");
+                break;
+        }
+    }
+}
+
+----------------------------------------------------------------------------------
+*DETYRA 3
+
+import java.util.Scanner;
+public class Semestri {
+
+    public static void main(String args[]) {
+        Scanner skaneriJem = new Scanner(System.in);
+        
+        System.out.println("Sheno numrin e semestrit e semestrit:");
+        
+        short semestri = skaneriJem.nextShort();
+        
+        if (semestri == 1) {
+            System.out.println("Semestri i pare - Viti i pare");
+        } else if (semestri == 2){
+            System.out.println("Semestri i dyte - Viti i pare");
+        }
+        
+        else if (semestri == 3){
+            System.out.println("Semestri i trete - Viti i dyte");
+        } else if (semestri == 4){
+            System.out.println("Semestri i katert - Viti i dyte");
+        }
+        
+        else if (semestri == 5){
+            System.out.println("Semestri i peste - Viti i trete");
+        } else if (semestri == 6){
+            System.out.println("Semestri i gjashte - Viti i trete");
+        }
+        
+        else {System.out.println("Semestri i dhënë është gabim!");}
+        
+    }
+}
+
+---------------------------------------------------------------------------
+*DETYRA 4 
+
+import java.util.Scanner;
+
+public class Mosha {
+    public static void main(String[] args) {
+        Scanner skaneriJem = new Scanner(System.in);
+        System.out.println("Sheno moshen:");
+        int mosha = skaneriJem.nextInt();
+
+        if (mosha == 1) {
+            System.out.println("Moshe parashkollore - Nje");
+        } else if (mosha == 2) {
+            System.out.println("Moshe parashkollore - Dy");
+        } else if (mosha == 3) {
+            System.out.println("Moshe parashkollore - Tre");
+        } else if (mosha == 4) {
+            System.out.println("Moshe parashkollore - Kater");
+        } else if (mosha == 5) {
+            System.out.println("Moshe parashkollore - Pese");
+        } else if (mosha == 6) {
+            System.out.println("Moshe shkollore - Gjashte.");
+        } else {
+            System.out.println("mosha e dhene është gabim.");
+        }
+    }
+
+}
+
+------------------------------------------------------------------
+*DETYRA 5
+
+import java.util.Scanner;
+
+public class TeDhenatEAndit {
+
+    public static void main(String args[]) {
+        Scanner skaneriJem = new Scanner(System.in);
+
+        System.out.println("Sheno numrin e ID-se:");
+        int id = skaneriJem.nextInt();
+
+        System.out.println("Sheno emrin:");
+        String emri = skaneriJem.next();
+
+        System.out.println("Sheno mbiemrin:");
+        String mbiemri = skaneriJem.next();
+
+        System.out.println("Sheno vitin e lindjes:");
+        short vLindjes = skaneriJem.nextShort();
+
+        System.out.println("Sheno vitin e studimit:");
+        byte vStudimit = skaneriJem.nextByte();
+
+        System.out.println("Ju ofruat keto te dhena personale:");
+        System.out.println("ID: " + id);
+        System.out.println("Emri: " + emri);
+        System.out.println("Mbiemri: " + mbiemri);
+        System.out.println("Viti i lindjes: " + vLindjes);
+        System.out.println("Viti i studimit: " + vStudimit);
+
+    }
+}
+
+------------------------------------------------------------------
+*DETYRA 6
+
+import java.util.Scanner;
+
+public class Shpejtesia {
+    public static void main(String[] args) {
+        Scanner skaneriJem = new Scanner(System.in);
+        System.out.println("Sheno Shpejtesine:");
+        short shpejtesia = skaneriJem.nextShort();
+
+        if (shpejtesia == 0) {
+            System.out.println("Vetura eshte e ndalur");
+        } else if (shpejtesia <= 30) {
+            System.out.println("Vetura eshte duke levizur ngadal");
+        } else if (shpejtesia <= 60) {
+            System.out.println("Vetura eshte duke levizur me shpejtesi normale");
+        } else if (shpejtesia <= 90) {
+            System.out.println("Vetura eshte duke levizur mbi shpejtesine normale");
+        } else if (shpejtesia <= 120) {
+            System.out.println("Vetura eshte duke levizur me shpejtesi shume te larte");
+        }  else {
+            System.out.println("shpejtesia e dhene është gabim.");
+        }
+    }
+
+}
+
+---------------------------------------------------------------------------------------------
